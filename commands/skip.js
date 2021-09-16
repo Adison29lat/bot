@@ -27,7 +27,7 @@ module.exports = {
     const currentTrack = queue.current;
     const success = queue.skip();
     return void interaction.followUp({
-      content: success ? `✅ | Skipped **${currentTrack}**!` : '❌ | Something went wrong!',
+      content: success ? ` zostaw toto **${currentTrack}**!` : 'cos sie zdupcylio',
     });
   },
 };
