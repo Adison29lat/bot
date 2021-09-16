@@ -64,7 +64,7 @@ module.exports = {
     } catch (error) {
       console.log(error);
       interaction.followUp({
-        content: 'There was an error trying to execute that command: ' + error.message,
+        content: 'blad zjebalo sie cosik ' + error.message,
       });
     }
   },
