@@ -1,3 +1,5 @@
 cd bot
 npm i discord.js --save
 node .
+
+application.commands
