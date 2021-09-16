@@ -7,6 +7,25 @@ const {Player} = require('discord-player');
 const client = new Client();
 client.commands = new Discord.Collection();
 
+client.on('messageCreate', gotMessage);
+const replies = [
+  'morda',
+  'gripex to szmata',
+  'zsi',
+  'many to cfeeel!',
+  'dima pracowac'
+]
+function gotMessage(msg){
+  console.log(msg.content);
+    if ( msg.content === 'odezwij sie saszka') {
+      const r = Math.floor(Math.random() * replies.length);
+        //const r = Math.floor(Math.random() * replies.length);
+    msg.reply(replies[r]); 
+       //  msg.channel.send(replies[r]);
+    }
+}
+
+
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
