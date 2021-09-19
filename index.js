@@ -13,7 +13,9 @@ const replies = [
   'gripex to szmata',
   'zsi',
   'many to cfeeel!',
-  'dima pracowac'
+  'dima pracowac',
+  'Do matury zostały 7 miesięcy i 17 dni.',
+  'uczyc sie'
 ]
 function gotMessage(msg){
   console.log(msg.content);
@@ -23,8 +25,7 @@ function gotMessage(msg){
     msg.reply(replies[r]); 
        //  msg.channel.send(replies[r]);
     }
-}
-
+  }
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
